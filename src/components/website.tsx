@@ -50,10 +50,10 @@ export function Website() {
                 <Image
                   src="/pic.jpeg"
                   alt="Phillip Da Man"
-                  width={240}
-                  height={240}
+                  width={500}
+                  height={500}
                   className="rounded-lg grayscale"
-                  style={{ aspectRatio: "160/160", objectFit: "cover" }}
+                  style={{ aspectRatio: "500/500", objectFit: "cover" }}
                 />
               </div>
             </div>
