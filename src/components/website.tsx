@@ -30,7 +30,13 @@ import Image from "next/image"
 export function Website() {
   const showLink = false
   return (
-    <div className="flex flex-col min-h-dvh bg-gradient-to-br from-primary to-secondary">
+    <div className="flex flex-col min-h-dvh bg-gradient-to-br from-[#FF6B6B] to-[#FFA500]">
+      <header className="fixed top-0 left-0 w-full bg-background/50 backdrop-blur-md z-50 py-2">
+        <div className="container flex items-center justify-between">
+          <div className="font-bold text-lg pl-10 text-muted-foreground">Made in L.A. (Lower Alabama)</div>
+          <div className="font-bold text-lg  text-muted-foreground">Lives in Brooklyn</div>
+        </div>
+      </header>
       <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <div className="container space-y-10 xl:space-y-16">
           <div className="grid gap-4 px-10 md:grid-cols-2 md:gap-16">
@@ -38,21 +44,21 @@ export function Website() {
               <h1 className="lg:leading-tighter text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-[4rem] 2xl:text-[4.5rem] underline">
                 <strong className="md:text-8xl sm:text-5xl italic">Living the</strong> <span className=" italic md:text-8xl sm:text-5xl">Dream</span>
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-8">
+              <p className="mx-auto max-w-[700px] md:text-xl mt-8 text-rose-500">
                 With over 15 years of experience in software engineering, I am currently a Senior Consultant and Cloud Engineer at BJSS, specializing in AWS platform solutions. My journey in tech has also seen me thrive as a Full Stack Engineer, with proficiency in Go, JavaScript/TypeScript, and Python. I’m passionate about building scalable, efficient, and innovative solutions that drive business success.
               </p>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-10">
+              <p className="mx-auto max-w-[700px] md:text-xl mt-10">
                 Outside of my professional life, I am a proud husband and father to a lovely daughter. My family and I call Brooklyn home, where we enjoy the vibrant culture and energy of New York City. When I’m not immersed in code, you can find me exploring the latest sneaker drops, hanging out with my dog and cats, or simply soaking in all that the city has to offer.
               </p>
             </div>
             <div className="flex flex-col items-start space-y-4" >
-              <div className="rounded-lg bg-muted p-2">
+              <div className="rounded-lg bg-muted p-2 drop-shadow-2xl shadow-2xl blur-[1px] shadow-cyan-500/50">
                 <Image
                   src="/pic.jpeg"
                   alt="Phillip Da Man"
                   width={500}
                   height={500}
-                  className="rounded-lg grayscale"
+                  className="rounded-lg drop-shadow-2xl grayscale"
                   style={{ aspectRatio: "500/500", objectFit: "cover" }}
                 />
               </div>
@@ -80,13 +86,13 @@ export function Website() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-2">
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     AWS S3
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Quicksight
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     AWS Glue
                   </div>
                 </div>
@@ -111,13 +117,13 @@ export function Website() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-2">
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Lambda
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Glue
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Cloudformation
                   </div>
                 </div>
@@ -142,13 +148,13 @@ export function Website() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-2">
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     React Native
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Firebase
                   </div>
-                  <div className="rounded-md bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                  <div className="rounded-md bg-[#FF6B6B] px-3 py-1 text-xs font-medium text-primary-foreground">
                     Expo
                   </div>
                 </div>
@@ -167,7 +173,7 @@ export function Website() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-primary to-secondary">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-[#FF6B6B] to-[#FFA500]">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Skills</h2>
@@ -177,39 +183,39 @@ export function Website() {
           </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">React</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Next.js</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Axiom</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">React</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Next.js</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Axiom</div>
 
               {/* <div className="text-sm text-muted-foreground">Frontend</div> */}
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">
                 Go
               </div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Javascript</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Python</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Javascript</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Python</div>
 
               {/* <div className="text-sm text-muted-foreground">Backend</div> */}
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">Vercel</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Railway.app</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">Vercel</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Railway.app</div>
               {/*<div className="text-sm text-muted-foreground">Database</div> */}
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">AWS</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Postgres</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">AWS</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Postgres</div>
               {/*<div className="text-sm text-muted-foreground">Cloud</div> */}
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">Docker</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Redis</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">Docker</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Redis</div>
               {/*<div className="text-sm text-muted-foreground">Containerization</div> */}
             </div>
             <div className="flex flex-col items-center gap-2">
-              <div className="rounded-lg bg-primary px-4 py-2 text-xs font-medium text-primary-foreground">Fly.io</div>
-              <div className="rounded-lg bg-primary px-4 py-1 text-xs font-medium text-primary-foreground">Clerk</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-2 text-xs font-medium text-primary-foreground">Fly.io</div>
+              <div className="rounded-lg bg-[#00CED1] px-4 py-1 text-xs font-medium text-primary-foreground">Clerk</div>
               {/*<div className="text-sm text-muted-foreground">Orchestration</div> */}
             </div>
           </div>
@@ -266,7 +272,7 @@ export function Website() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   )
 }
 
