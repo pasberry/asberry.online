@@ -35,13 +35,13 @@ export function Website() {
         <div className="container space-y-10 xl:space-y-16">
           <div className="grid gap-4 px-10 md:grid-cols-2 md:gap-16">
             <div>
-              <h1 className="lg:leading-tighter text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-[4rem] 2xl:text-[4.5rem]">
-                <strong className="text-8xl">Hi</strong>, I'm Phillip !
+              <h1 className="lg:leading-tighter text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-[4rem] 2xl:text-[4.5rem] underline">
+                <strong className="md:text-8xl sm:text-5xl italic">Living the</strong> <span className=" italic md:text-8xl sm:text-5xl">Dream</span>
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-5">
+              <p className="indent-8 mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-8">
                 With over 15 years of experience in software engineering, I am currently a Senior Consultant and Cloud Engineer at BJSS, specializing in AWS platform solutions. My journey in tech has also seen me thrive as a Full Stack Engineer, with proficiency in Go, JavaScript/TypeScript, and Python. I’m passionate about building scalable, efficient, and innovative solutions that drive business success.
               </p>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-5">
+              <p className="indent-8 mx-auto max-w-[700px] text-muted-foreground md:text-xl mt-10">
                 Outside of my professional life, I am a proud husband and father to a lovely daughter. My family and I call Brooklyn home, where we enjoy the vibrant culture and energy of New York City. When I’m not immersed in code, you can find me exploring the latest sneaker drops, hanging out with my dog and cats, or simply soaking in all that the city has to offer.
               </p>
             </div>
